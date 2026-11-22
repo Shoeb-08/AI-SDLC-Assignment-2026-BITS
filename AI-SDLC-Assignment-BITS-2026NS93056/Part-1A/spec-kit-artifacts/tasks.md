@@ -124,7 +124,7 @@ The tasks below are the work that produced the accepted Part 1A project. They ar
 
 **Goal**: Constitution gate 8.
 
-- [x] T030 Confirm the run used for acceptance: lint PASS (17 files), security PASS (12 files), tests PASS (24)
+- [x] T030 Confirm the run used for acceptance: lint PASS (17 files), security PASS (12 files), tests PASS (64)
 - [x] T031 Record the human review decision ACCEPT and the single-user JSON limit in `evidence/harness-log.md`
 - [x] T032 Confirm each functional requirement has a row in the specification verification map
 
@@ -174,7 +174,7 @@ Story2, Story3, Story4, Story5, and Story6 touch different methods and different
 | Item | Result |
 | --- | --- |
 | Tasks T001–T032 | Complete |
-| Pytest | 24 passed |
+| Pytest | 64 passed |
 | Lint | PASS, 0 issues |
 | Security | PASS, 0 issues |
 | Harness | PASS |
