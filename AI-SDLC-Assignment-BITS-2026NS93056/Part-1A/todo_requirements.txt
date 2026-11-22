@@ -1,0 +1,31 @@
+I need to build a Proserve Client Task Inventory Management in Python for my AI-Augmented SDLC assignment.
+
+The application should allow users to:
+
+- Create tasks
+- Update tasks
+- Delete tasks
+- Mark tasks as completed
+- Filter tasks using tags
+- Sort tasks based on priority
+- Store all tasks in a JSON file
+
+Each task should contain:
+
+- Task ID
+- Title
+- Description
+- Priority
+- Tags
+- Status
+
+Please create a complete project structure for this application.
+
+The project should include:
+
+- Source code
+- Unit tests using pytest
+- A harness folder containing scripts for lint checking, security checking and test execution
+- Evidence folder for storing outputs and logs
+
+Use Python and keep the implementation simple and beginner-friendly.

@@ -1,0 +1,11 @@
+Convert the user's reminder request into exactly this JSON shape:
+
+{"intent":"string","task":"string","datetime":"ISO datetime string or null","needs_clarification":false}
+
+Allowed intents: create_reminder, reschedule_reminder, snooze_reminder, clarification_required.
+
+Rules:
+- Request clarification rather than inventing missing tasks or dates.
+- Reject invalid or contradictory dates.
+- Resolve relative dates from the supplied reference datetime.
+- Return only JSON with no explanation.

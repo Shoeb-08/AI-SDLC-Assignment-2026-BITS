@@ -1,0 +1,78 @@
+Test run
+========
+Time: 2026-11-22T18:07:38
+
+============================= test session starts =============================
+platform win32 -- Python 3.13.7, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Shoeb\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Shoeb\Downloads\AI-SDLC-Assignment-BITS-2026NS93056\AI-SDLC-Assignment-BITS-2026NS93056\Part-1A
+collecting ... collected 64 items
+
+tests/test_cli.py::test_cli_create_complete_and_list PASSED              [  1%]
+tests/test_cli.py::test_cli_exit_immediately PASSED                      [  3%]
+tests/test_cli.py::test_cli_invalid_menu_choice PASSED                   [  4%]
+tests/test_cli.py::test_cli_list_empty_tasks PASSED                      [  6%]
+tests/test_cli.py::test_cli_delete_cancelled PASSED                      [  7%]
+tests/test_cli.py::test_cli_delete_confirmed PASSED                      [  9%]
+tests/test_cli.py::test_cli_filter_by_tag PASSED                         [ 10%]
+tests/test_cli.py::test_cli_sort_tasks PASSED                            [ 12%]
+tests/test_cli.py::test_cli_update_task_fields PASSED                    [ 14%]
+tests/test_cli.py::test_cli_invalid_task_id_format PASSED                [ 15%]
+tests/test_cli.py::test_cli_corrupt_file_startup PASSED                  [ 17%]
+tests/test_manager.py::test_create_list_and_ids PASSED                   [ 18%]
+tests/test_manager.py::test_create_rejects_blank_title PASSED            [ 20%]
+tests/test_manager.py::test_update_task PASSED                           [ 21%]
+tests/test_manager.py::test_invalid_priority_does_not_change_task PASSED [ 23%]
+tests/test_manager.py::test_delete_task PASSED                           [ 25%]
+tests/test_manager.py::test_delete_missing_task PASSED                   [ 26%]
+tests/test_manager.py::test_mark_completed PASSED                        [ 28%]
+tests/test_manager.py::test_filter_by_tag_is_case_insensitive PASSED     [ 29%]
+tests/test_manager.py::test_filter_requires_a_tag PASSED                 [ 31%]
+tests/test_manager.py::test_sort_by_priority PASSED                      [ 32%]
+tests/test_manager.py::test_sort_can_be_saved PASSED                     [ 34%]
+tests/test_manager.py::test_tasks_are_reloaded_from_json PASSED          [ 35%]
+tests/test_manager.py::test_create_task_default_priority PASSED          [ 37%]
+tests/test_manager.py::test_create_task_empty_description_and_tags PASSED [ 39%]
+tests/test_manager.py::test_get_task_success PASSED                      [ 40%]
+tests/test_manager.py::test_get_task_missing_raises_error PASSED         [ 42%]
+tests/test_manager.py::test_get_task_invalid_id_type PASSED              [ 43%]
+tests/test_manager.py::test_update_task_reopen_status PASSED             [ 45%]
+tests/test_manager.py::test_update_task_invalid_status_does_not_change_task PASSED [ 46%]
+tests/test_manager.py::test_filter_by_tag_no_match PASSED                [ 48%]
+tests/test_manager.py::test_sort_by_priority_tie_breaking PASSED         [ 50%]
+tests/test_manager.py::test_delete_only_target_task PASSED               [ 51%]
+tests/test_storage.py::test_missing_file_starts_empty PASSED             [ 53%]
+tests/test_storage.py::test_empty_file_starts_empty PASSED               [ 54%]
+tests/test_storage.py::test_save_and_load_round_trip PASSED              [ 56%]
+tests/test_storage.py::test_invalid_json PASSED                          [ 57%]
+tests/test_storage.py::test_next_id_moves_past_existing_tasks PASSED     [ 59%]
+tests/test_storage.py::test_load_non_dict_json_raises_error PASSED       [ 60%]
+tests/test_storage.py::test_load_missing_clients_field PASSED            [ 62%]
+tests/test_storage.py::test_load_clients_not_a_list PASSED               [ 64%]
+tests/test_storage.py::test_load_invalid_client_id_type_bool PASSED      [ 65%]
+tests/test_storage.py::test_load_invalid_client_id_type_string PASSED    [ 67%]
+tests/test_storage.py::test_load_invalid_client_id_negative PASSED       [ 68%]
+tests/test_storage.py::test_load_invalid_client_id_zero PASSED           [ 70%]
+tests/test_storage.py::test_save_creates_parent_directory PASSED         [ 71%]
+tests/test_storage.py::test_save_cleans_up_temporary_file PASSED         [ 73%]
+tests/test_storage.py::test_load_backward_compatible_with_legacy_tokens PASSED [ 75%]
+tests/test_task.py::test_task_round_trip_drops_duplicate_tags PASSED     [ 76%]
+tests/test_task.py::test_rejects_blank_title PASSED                      [ 78%]
+tests/test_task.py::test_rejects_bad_priority PASSED                     [ 79%]
+tests/test_task.py::test_rejects_bad_status PASSED                       [ 81%]
+tests/test_task.py::test_from_dict_missing_field PASSED                  [ 82%]
+tests/test_task.py::test_rejects_non_numeric_task_id PASSED              [ 84%]
+tests/test_task.py::test_validate_description_none_returns_empty_string PASSED [ 85%]
+tests/test_task.py::test_validate_description_non_string_raises PASSED   [ 87%]
+tests/test_task.py::test_validate_tags_from_comma_string PASSED          [ 89%]
+tests/test_task.py::test_validate_tags_none_returns_empty_list PASSED    [ 90%]
+tests/test_task.py::test_validate_tags_invalid_type_raises PASSED        [ 92%]
+tests/test_task.py::test_validate_tags_non_string_element_raises PASSED  [ 93%]
+tests/test_task.py::test_rejects_negative_task_id PASSED                 [ 95%]
+tests/test_task.py::test_rejects_zero_task_id PASSED                     [ 96%]
+tests/test_task.py::test_task_property_aliases PASSED                    [ 98%]
+tests/test_task.py::test_from_dict_non_dict_raises PASSED                [100%]
+
+============================= 64 passed in 0.28s ==============================
+
+Exit code: 0
